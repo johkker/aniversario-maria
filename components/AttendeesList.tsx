@@ -172,9 +172,9 @@ export default function AttendeesList() {
 
       {/* Attendees List */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {filteredAttendees.map((attendee, index) => (
+        {filteredAttendees.map((attendee) => (
           <div
-            key={index}
+            key={attendee.name}
             className={`p-4 rounded-2xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 ${
               attendee.paid
                 ? 'bg-gradient-to-br from-green-50 to-teal-50 border-2 border-green-200'
