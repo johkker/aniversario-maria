@@ -1,4 +1,6 @@
 import AttendeesList from '@/components/AttendeesList';
+import Fireworks from '@/components/Fireworks';
+import Countdown from '@/components/Countdown';
 import { Cake, Sparkles } from 'lucide-react';
 
 export default function Home() {
@@ -18,9 +20,14 @@ export default function Home() {
           <p className="text-2xl md:text-3xl text-purple-700 font-indie mb-2">
             17 de Janeiro de 2026
           </p>
-          <p className="text-lg text-gray-600 font-indie">
+          <p className="text-lg text-gray-600 font-indie mb-6">
             Vamos celebrar juntos! 🎉✨
           </p>
+          
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
+            <Countdown />
+            <Fireworks />
+          </div>
         </header>
 
         {/* Main Content */}
